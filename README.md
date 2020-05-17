@@ -1,6 +1,6 @@
 # CoVitimas
 
-Monitoramento dos casos positivos para COVID19 através de aplicativo de internet
+CoVitimas é um aplicaivo que possui o objetivo de ajudar de forma educativa os pacientes positivos para a doença com o isolamento domiciliar e acompanhamento diário dos sintomas.
 
 
 O aplicativo é só um design criado para um hackathon chamado HackCovid19
