@@ -7,13 +7,11 @@ const style = StyleSheet.create({
         color: '#000000',
         fontSize: 12,
         textAlign: 'center',
-        marginTop: 20,
         fontWeight: 'bold'
     },
     container2: {
         width: '50%',
         aspectRatio: 1,
-        borderRadius: 30,
         padding: 5
     },
     view1: {
@@ -22,42 +20,31 @@ const style = StyleSheet.create({
         height: '35%',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: '#FFF',
     }
 })
 
-function MenuItem({ onPress, image, title }) {
+function Item({ onPress, image, title }) {
     return (
         <TouchableOpacity onPress={onPress} style={style.container2}>
             <View style={style.view1}>
-                {React.isValidElement(image)
-                    ? image
-                    : image && (
-                        <Image
-                              resizeMode="cover"
-                              style={{
-                                  width: 60,
-                                  height: 60,
-                                  resizeMode: 'contain',
-                                  alignSelf: 'center'
-                              }}
-                              source={image}
-                        />
-                    )}
                 <Text style={style.title}> {title} </Text>
             </View>
         </TouchableOpacity>
     )
 }
 
-MenuItem.propTypes = {
+Item.propTypes = {
     onPress: PropTypes.func.isRequired,
     title: PropTypes.string.isRequired,
     image: PropTypes.any
 }
 
-MenuItem.defaultProps = {
+Item.defaultProps = {
     image: null
 }
 
-export default MenuItem
+export default Item

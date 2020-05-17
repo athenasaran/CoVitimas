@@ -60,8 +60,8 @@ class Main extends Component {
             image={
               <Icon
                 styleIcon={style.icon}
-                type="font-awesome"
-                name="calculator"
+                type="entypo"
+                name="calendar"
                 color="#00b33c"
                 size={60}
               />
@@ -76,8 +76,8 @@ class Main extends Component {
             image={
               <Icon
                 styleIcon={style.icon}
-                type="font-awesome"
-                name="calculator"
+                type="entypo"
+                name="news"
                 color="#00b33c"
                 size={60}
               />
@@ -91,8 +91,8 @@ class Main extends Component {
             image={
               <Icon
                 styleIcon={style.icon}
-                type="font-awesome"
-                name="calculator"
+                type="entypo"
+                name="user"
                 color="#00b33c"
                 size={60}
               />
@@ -106,8 +106,8 @@ class Main extends Component {
             image={
               <Icon
                 styleIcon={style.icon}
-                type="font-awesome"
-                name="bug"
+                type="ionicons"
+                name="people"
                 color="#00b33c"
                 size={60}
               />
@@ -121,8 +121,8 @@ class Main extends Component {
             image={
               <Icon
                 styleIcon={style.icon}
-                type="font-awesome"
-                name="calculator"
+                type="entypo"
+                name="chat"
                 color="#00b33c"
                 size={60}
               />
@@ -137,7 +137,7 @@ class Main extends Component {
               <Icon
                 styleIcon={style.icon}
                 type="font-awesome"
-                name="calculator"
+                name="map-marker"
                 color="#00b33c"
                 size={60}
               />

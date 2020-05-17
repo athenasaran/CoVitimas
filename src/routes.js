@@ -12,17 +12,38 @@ import Orientacoes from "./pages/Orientacoes";
 import Chat from "./pages/Chat";
 import PreCadastro from "./pages/PreCadastro";
 
-
 const Routes = createAppContainer(
   createStackNavigator(
-    {
-      Login,
+    { 
+      Diario: {
+        screen: Diario,
+        navigationOptions: {
+          headerTitleStyle: {
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Diário",
+        },
+      },
       Main,
+      Central: {
+        screen: Central,
+        navigationOptions: {
+          headerTitleStyle: {
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Central",
+        },
+      },
+      Login,
+     
       Orientacoes: {
         screen: Orientacoes,
         navigationOptions: {
           headerTitleStyle: {
-            
             fontWeight: "bold",
             alignSelf: "center",
             textAlign: "center",
@@ -34,7 +55,6 @@ const Routes = createAppContainer(
         screen: PreCadastro,
         navigationOptions: {
           headerTitleStyle: {
-            
             fontWeight: "bold",
             alignSelf: "center",
             textAlign: "center",
@@ -46,7 +66,6 @@ const Routes = createAppContainer(
         screen: Chat,
         navigationOptions: {
           headerTitleStyle: {
-            
             fontWeight: "bold",
             alignSelf: "center",
             textAlign: "center",
@@ -59,7 +78,6 @@ const Routes = createAppContainer(
         screen: Cadastro,
         navigationOptions: {
           headerTitleStyle: {
-            
             fontWeight: "bold",
             alignSelf: "center",
             textAlign: "center",
@@ -71,7 +89,6 @@ const Routes = createAppContainer(
         screen: Assistente,
         navigationOptions: {
           headerTitleStyle: {
-            
             fontWeight: "bold",
             alignSelf: "center",
             textAlign: "center",
@@ -79,35 +96,12 @@ const Routes = createAppContainer(
           headerTitle: "Assistentes Sociais",
         },
       },
-      Central: {
-        screen: Central,
-        navigationOptions: {
-          headerTitleStyle: {
-            
-            fontWeight: "bold",
-            alignSelf: "center",
-            textAlign: "center",
-          },
-          headerTitle: "Central",
-        },
-      },
-      Diario: {
-        screen: Diario,
-        navigationOptions: {
-          headerTitleStyle: {
-            
-            fontWeight: "bold",
-            alignSelf: "center",
-            textAlign: "center",
-          },
-          headerTitle: "Diário",
-        },
-      },
+
+      
       EsqueciSenha: {
         screen: EsqueciSenha,
         navigationOptions: {
           headerTitleStyle: {
-            
             fontWeight: "bold",
             alignSelf: "center",
             textAlign: "center",
@@ -119,7 +113,6 @@ const Routes = createAppContainer(
         screen: Familiar,
         navigationOptions: {
           headerTitleStyle: {
-            
             fontWeight: "bold",
             alignSelf: "center",
             textAlign: "center",
