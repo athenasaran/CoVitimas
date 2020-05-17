@@ -118,7 +118,7 @@ class Main extends Component {
                 size={60}
               />
             }
-            title="SERVIÇOS DE SAÚDE MAIS PRÓXIMOS"
+            title="SERVIÇOS DE SAÚDE E ONGS MAIS PRÓXIMAS"
           />
         </View>
       </>

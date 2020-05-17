@@ -11,10 +11,11 @@ import Familiar from "./pages/Familiar";
 import Orientacoes from "./pages/Orientacoes";
 import Chat from "./pages/Chat";
 import PreCadastro from "./pages/PreCadastro";
+import Servicos from "./pages/Servicos";
 
 const Routes = createAppContainer(
   createStackNavigator(
-    {  
+    {   Main,
       Assistente: {
         screen: Assistente,
         navigationOptions: {
@@ -26,7 +27,7 @@ const Routes = createAppContainer(
           headerTitle: "Assistentes Sociais",
         },
       }, 
-      Main,
+     
       Chat: {
         screen: Chat,
         navigationOptions: {
@@ -112,6 +113,16 @@ const Routes = createAppContainer(
       
       Familiar: {
         screen: Familiar,
+        navigationOptions: {
+          headerTitleStyle: {
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+        },
+      },
+      Servicos: {
+        screen: Servicos,
         navigationOptions: {
           headerTitleStyle: {
             fontWeight: "bold",
