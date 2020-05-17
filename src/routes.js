@@ -12,10 +12,13 @@ import Orientacoes from "./pages/Orientacoes";
 import Chat from "./pages/Chat";
 import PreCadastro from "./pages/PreCadastro";
 import Servicos from "./pages/Servicos";
+import PedidoAssistencia from "./pages/PedidoAssistencia";
 
 const Routes = createAppContainer(
   createStackNavigator(
-    {   Main,
+    { 
+      Login,  
+      Main,
       Assistente: {
         screen: Assistente,
         navigationOptions: {
@@ -25,6 +28,17 @@ const Routes = createAppContainer(
             textAlign: "center",
           },
           headerTitle: "Assistentes Sociais",
+        },
+      }, 
+      PedidoAssistencia: {
+        screen: PedidoAssistencia,
+        navigationOptions: {
+          headerTitleStyle: {
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Pedido de Assistência",
         },
       }, 
      
@@ -70,10 +84,10 @@ const Routes = createAppContainer(
             alignSelf: "center",
             textAlign: "center",
           },
-          headerTitle: "Central",
+          headerTitle: "Observar Pacientes",
         },
       },
-      Login,
+ 
      
       Orientacoes: {
         screen: Orientacoes,
@@ -129,6 +143,8 @@ const Routes = createAppContainer(
             alignSelf: "center",
             textAlign: "center",
           },
+          
+          headerTitle: "Serviços",
         },
       },
     },

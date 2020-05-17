@@ -53,6 +53,8 @@ class PreCadastro extends Component {
           <Text style={styles.loginText}>SOU DA CENTRAL</Text>
           {/*dava para usar Button, mas com o TouchableOpacity dá para deixar mais bonito*/}
         </TouchableOpacity>
+
+        
       </View>
     );
   }

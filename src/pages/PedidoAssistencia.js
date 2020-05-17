@@ -14,27 +14,7 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   view1: {
-    backgroundColor: "#ffff56",
-    width: "100%",
-    height: "30%",
-    flexDirection: "row",
-    borderColor: "black",
-    borderWidth: 1,
-    marginBottom: 10,
-    borderRadius: 10,
-  },
-  view2: {
-    backgroundColor: "#88ff56",
-    width: "100%",
-    height: "30%",
-    flexDirection: "row",
-    borderColor: "black",
-    borderWidth: 1,
-    marginBottom: 10,
-    borderRadius: 10,
-  },
-  view3: {
-    backgroundColor: "#ff3e4f",
+    backgroundColor: "#FFF",
     width: "100%",
     height: "30%",
     flexDirection: "row",
@@ -54,7 +34,7 @@ const styles = StyleSheet.create({
   },
 });
 
-class Central extends Component {
+class PedidoAssistencia extends Component {
   render() {
     return (
       <TouchableOpacity style={styles.container2}>
@@ -73,12 +53,12 @@ class Central extends Component {
               Carla, 25 anos. Belo Horizonte, MG
             </Text>
             <Text style={{ alignSelf: "center" }}>
-              Início dos Sintomas: 16/05/2020
+            COMIDA, ÁGUA E LUZ
             </Text>
           </View>
         </View>
 
-        <View style={styles.view2}>
+        <View style={styles.view1}>
           <Avatar
             size="large"
             rounded
@@ -93,12 +73,12 @@ class Central extends Component {
               Arthur, 30 anos. Belo Horizonte, MG
             </Text>
             <Text style={{ alignSelf: "center" }}>
-              Início dos Sintomas: 05/05/2020
+            COMIDA, ÁGUA E LUZ
             </Text>
           </View>
         </View>
 
-        <View style={styles.view3}>
+        <View style={styles.view1}>
           <Avatar
             size="large"
             rounded
@@ -113,7 +93,7 @@ class Central extends Component {
               Marcos, 50 anos. Belo Horizonte, MG
             </Text>
             <Text style={{ alignSelf: "center" }}>
-              Início dos Sintomas: 12/05/2020
+            COMIDA, ÁGUA E LUZ
             </Text>
           </View>
         </View>
@@ -122,4 +102,4 @@ class Central extends Component {
   }
 }
 
-export default Central;
+export default PedidoAssistencia;
