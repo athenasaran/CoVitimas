@@ -111,14 +111,6 @@ class EsqueciSenha extends Component {
           {/*dava para usar Button, mas com o TouchableOpacity dá para deixar mais bonito*/}
         </TouchableOpacity>
 
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate("EsqueciSenha");
-          }}
-        >
-          
- 
-        </TouchableOpacity>
       </View>
     );
   }
