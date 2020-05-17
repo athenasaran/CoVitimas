@@ -1,7 +1,7 @@
 import * as WebBrowser from "expo-web-browser";
 import React, { Component } from "react";
 import { TouchableOpacity, StyleSheet, Text, View } from "react-native";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const styles = StyleSheet.create({
   container: {
@@ -27,18 +27,18 @@ const styles = StyleSheet.create({
 });
 
 class PreCadastro extends Component {
-    static propTypes = {
-        navigation: PropTypes.any.isRequired,
-    }
-    
+  static propTypes = {
+    navigation: PropTypes.any.isRequired,
+  };
+
   render() {
-      const { navigation } = this.props
+    const { navigation } = this.props;
     return (
       <View style={styles.container}>
         <TouchableOpacity
           style={styles.loginBtn}
           onPress={() => {
-            navigation.navigate("Cadastro",{Paciente: true});
+            navigation.navigate("Cadastro", { Paciente: true });
           }}
         >
           <Text style={styles.loginText}>SOU PACIENTE</Text>
@@ -47,14 +47,12 @@ class PreCadastro extends Component {
         <TouchableOpacity
           style={styles.loginBtn}
           onPress={() => {
-            navigation.navigate("Cadastro", {Paciente: false});
+            navigation.navigate("Cadastro", { Paciente: false });
           }}
         >
           <Text style={styles.loginText}>SOU DA CENTRAL</Text>
           {/*dava para usar Button, mas com o TouchableOpacity dá para deixar mais bonito*/}
         </TouchableOpacity>
-
-        
       </View>
     );
   }

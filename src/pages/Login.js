@@ -82,9 +82,9 @@ class Login extends Component {
 
   telaPrincipal = () => {
     const { email, password } = this.state;
-    if (email === "a" && password === "a") {
+    if (email === "p" && password === "p") {
       this.props.navigation.navigate("Main",{Paciente: true});
-    } else if(email === "aa" && password === "aa") {
+    } else if(email === "c" && password === "c") {
       this.props.navigation.navigate("Main",{Paciente: false});
     }
   };

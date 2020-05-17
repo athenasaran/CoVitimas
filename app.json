@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "CoronaVirus Tem",
-    "slug": "coronavirus-tem",
+    "name": "CoVitimas",
+    "slug": "CoVitimas",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
