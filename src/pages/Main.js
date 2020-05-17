@@ -138,8 +138,8 @@ class Main extends Component {
               image={
                 <Icon
                   styleIcon={style.icon}
-                  type="entypo"
-                  name="chat"
+                  type="font-awesome"
+                  name="search"
                   color="#00b33c"
                   size={60}
                 />
@@ -153,8 +153,8 @@ class Main extends Component {
               image={
                 <Icon
                   styleIcon={style.icon}
-                  type="font-awesome"
-                  name="map-marker"
+                  type="entypo"
+                  name="v-card"
                   color="#00b33c"
                   size={60}
                 />

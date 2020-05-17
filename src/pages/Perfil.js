@@ -9,15 +9,15 @@ const styles = StyleSheet.create({
   },
 });
 
-class Familiar extends Component {
+class Perfil extends Component {
   render() {
   return (
     <View style={styles.container}>
-      <Text>Familiar</Text>
+      <Text>Perfil</Text>
     </View>
   );
 }}
 
 
 
-export default Familiar;
+export default Perfil;

@@ -7,7 +7,7 @@ import Cadastro from "./pages/Cadastro";
 import Central from "./pages/Central";
 import Diario from "./pages/Diario";
 import EsqueciSenha from "./pages/EsqueciSenha";
-import Familiar from "./pages/Familiar";
+import Perfil from "./pages/Perfil";
 import Orientacoes from "./pages/Orientacoes";
 import Chat from "./pages/Chat";
 import PreCadastro from "./pages/PreCadastro";
@@ -16,7 +16,29 @@ import PedidoAssistencia from "./pages/PedidoAssistencia";
 
 const Routes = createAppContainer(
   createStackNavigator(
-    { 
+    {  
+      Cadastro: {
+        screen: Cadastro,
+        navigationOptions: {
+          headerTitleStyle: {
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Cadastro",
+        },
+      },
+      Perfil: {
+        screen: Perfil,
+        navigationOptions: {
+          headerTitleStyle: {
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Meu Perfil",
+        },
+      },
       Login,  
       Main,
       Assistente: {
@@ -86,9 +108,7 @@ const Routes = createAppContainer(
           },
           headerTitle: "Observar Pacientes",
         },
-      },
- 
-     
+      },  
       Orientacoes: {
         screen: Orientacoes,
         navigationOptions: {
@@ -109,30 +129,6 @@ const Routes = createAppContainer(
             textAlign: "center",
           },
           headerTitle: "Cadastro",
-        },
-      },
-
-
-      Cadastro: {
-        screen: Cadastro,
-        navigationOptions: {
-          headerTitleStyle: {
-            fontWeight: "bold",
-            alignSelf: "center",
-            textAlign: "center",
-          },
-          headerTitle: "Cadastro",
-        },
-      },
-      
-      Familiar: {
-        screen: Familiar,
-        navigationOptions: {
-          headerTitleStyle: {
-            fontWeight: "bold",
-            alignSelf: "center",
-            textAlign: "center",
-          },
         },
       },
       Servicos: {
