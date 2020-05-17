@@ -13,21 +13,10 @@ import Chat from "./pages/Chat";
 import PreCadastro from "./pages/PreCadastro";
 import Servicos from "./pages/Servicos";
 import PedidoAssistencia from "./pages/PedidoAssistencia";
-
+import Familia from "./pages/Familia";
 const Routes = createAppContainer(
   createStackNavigator(
-    {  
-      Cadastro: {
-        screen: Cadastro,
-        navigationOptions: {
-          headerTitleStyle: {
-            fontWeight: "bold",
-            alignSelf: "center",
-            textAlign: "center",
-          },
-          headerTitle: "Cadastro",
-        },
-      },
+    {
       Perfil: {
         screen: Perfil,
         navigationOptions: {
@@ -39,7 +28,30 @@ const Routes = createAppContainer(
           headerTitle: "Meu Perfil",
         },
       },
-      Login,  
+      Familia: {
+        screen: Familia,
+        navigationOptions: {
+          headerTitleStyle: {
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Familiar",
+        },
+      },
+      Cadastro: {
+        screen: Cadastro,
+        navigationOptions: {
+          headerTitleStyle: {
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Cadastro",
+        },
+      },
+
+      Login,
       Main,
       Assistente: {
         screen: Assistente,
@@ -51,7 +63,7 @@ const Routes = createAppContainer(
           },
           headerTitle: "Assistentes Sociais",
         },
-      }, 
+      },
       PedidoAssistencia: {
         screen: PedidoAssistencia,
         navigationOptions: {
@@ -62,8 +74,8 @@ const Routes = createAppContainer(
           },
           headerTitle: "Pedido de Assistência",
         },
-      }, 
-     
+      },
+
       Chat: {
         screen: Chat,
         navigationOptions: {
@@ -97,7 +109,7 @@ const Routes = createAppContainer(
           headerTitle: "Diário",
         },
       },
-    
+
       Central: {
         screen: Central,
         navigationOptions: {
@@ -108,7 +120,7 @@ const Routes = createAppContainer(
           },
           headerTitle: "Observar Pacientes",
         },
-      },  
+      },
       Orientacoes: {
         screen: Orientacoes,
         navigationOptions: {
@@ -139,7 +151,7 @@ const Routes = createAppContainer(
             alignSelf: "center",
             textAlign: "center",
           },
-          
+
           headerTitle: "Serviços",
         },
       },
