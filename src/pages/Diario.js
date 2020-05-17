@@ -18,8 +18,5 @@ class Diario extends Component {
   );
 }}
 
-Diario.navigationOptions = {
-  header: null,
-};
 
 export default Diario;

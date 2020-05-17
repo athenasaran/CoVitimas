@@ -1,6 +1,7 @@
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import Login from "./pages/Login";
+import Main from "./pages/Main";
 import Assistente from "./pages/Assistente";
 import Cadastro from "./pages/Cadastro";
 import Central from "./pages/Central";
@@ -8,108 +9,138 @@ import Diario from "./pages/Diario";
 import EsqueciSenha from "./pages/EsqueciSenha";
 import Familiar from "./pages/Familiar";
 import Orientacoes from "./pages/Orientacoes";
+import Chat from "./pages/Chat";
+import PreCadastro from "./pages/PreCadastro";
+
 
 const Routes = createAppContainer(
   createStackNavigator(
     {
       Login,
-      Assistente:{
-        screen: Assistente,
-        navigationOptions:{
-          headerTitleStyle:{
-            margin:90,
-            fontWeight: "bold",
-            alignSelf:  "center",
-            textAlign: "center",
-          }
-        }
-      },
-      Cadastro:{
-        screen: Cadastro,
-        navigationOptions:{
-          headerTitleStyle:{
-            margin:90,
-            fontWeight: "bold",
-            alignSelf:  "center",
-            textAlign: "center",
-          }
-        }
-      },
-      Central:{
-        screen: Central,
-        navigationOptions:{
-          headerTitleStyle:{
-            margin:90,
-            fontWeight: "bold",
-            alignSelf:  "center",
-            textAlign: "center",
-          }
-        }
-      },
-      Diario:{
-        screen: Diario,
-        navigationOptions:{
-          headerTitleStyle:{
-            margin:90,
-            fontWeight: "bold",
-            alignSelf:  "center",
-            textAlign: "center",
-          }
-        }
-
-      },
-      EsqueciSenha:{
-        screen: EsqueciSenha,
-        navigationOptions:{
-          headerTitleStyle:{
-            margin:90,
-            fontWeight: "bold",
-            alignSelf:  "center",
-            textAlign: "center",
-          }
-        }
-
-      },
-      Familiar:{
-        screen: Familiar,
-        navigationOptions:{
-          headerTitleStyle:{
-            margin:90,
-            fontWeight: "bold",
-            alignSelf:  "center",
-            textAlign: "center",
-          }
-        }
-
-      },
-      Orientacoes:{
+      Main,
+      Orientacoes: {
         screen: Orientacoes,
-        navigationOptions:{
-          headerTitleStyle:{
-            margin:90,
+        navigationOptions: {
+          headerTitleStyle: {
+            
             fontWeight: "bold",
-            alignSelf:  "center",
+            alignSelf: "center",
             textAlign: "center",
-          }
-        }
-
+          },
+          headerTitle: "Orientações",
+        },
       },
-      
+      PreCadastro: {
+        screen: PreCadastro,
+        navigationOptions: {
+          headerTitleStyle: {
+            
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Cadastro",
+        },
+      },
+      Chat: {
+        screen: Chat,
+        navigationOptions: {
+          headerTitleStyle: {
+            
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Chat",
+        },
+      },
+
+      Cadastro: {
+        screen: Cadastro,
+        navigationOptions: {
+          headerTitleStyle: {
+            
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Cadastro",
+        },
+      },
+      Assistente: {
+        screen: Assistente,
+        navigationOptions: {
+          headerTitleStyle: {
+            
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Assistentes Sociais",
+        },
+      },
+      Central: {
+        screen: Central,
+        navigationOptions: {
+          headerTitleStyle: {
+            
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Central",
+        },
+      },
+      Diario: {
+        screen: Diario,
+        navigationOptions: {
+          headerTitleStyle: {
+            
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Diário",
+        },
+      },
+      EsqueciSenha: {
+        screen: EsqueciSenha,
+        navigationOptions: {
+          headerTitleStyle: {
+            
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Esqueci Senha",
+        },
+      },
+      Familiar: {
+        screen: Familiar,
+        navigationOptions: {
+          headerTitleStyle: {
+            
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+        },
+      },
     },
     {
       defaultNavigationOptions: {
-        headerTitle: 'COVID',
+        headerTitle: "COVID",
         headerTintColor: "#FFF",
         headerTitleStyle: {
           fontWeight: "bold",
-          alignSelf:  "center",
+          alignSelf: "center",
           textAlign: "center",
-          margin: 140,
+          margin: 70,
         },
         headerStyle: {
-          backgroundColor:"#00b33c"
-        }
-      }
+          backgroundColor: "#00b33c",
+        },
+      },
     }
   )
 );

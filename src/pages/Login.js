@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 
+import PropTypes from "prop-types";
 
 const styles = StyleSheet.create({
   container: {
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
   logo: {
     fontWeight: "bold",
     fontSize: 50,
-    color:"#00b33c",
+    color: "#00b33c",
     marginBottom: 30,
   },
   inputView: {
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
   },
   loginBtn: {
     width: "80%",
-    backgroundColor:"#00b33c",
+    backgroundColor: "#00b33c",
     borderRadius: 25,
     height: 50,
     alignItems: "center",
@@ -55,24 +56,33 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   text: {
-    color:"#00b33c",
+    color: "#00b33c",
     fontWeight: "bold",
     margin: 2,
   },
 });
 
 class Login extends Component {
+  static propTypes = {
+    navigation: PropTypes.any.isRequired,
+  };
+
   state = {
     email: "",
     password: "",
   };
 
   telaPrincipal = () => {
-    const { email, password} = this.state;
-    alert("email " + email + " password " + password)
+    const { email, password } = this.state;
+    if (email === "a" && password === "a") {
+      this.props.navigation.navigate("Main");
+    } else {
+      this.props.navigation.navigate("Central");
+    }
   };
 
   render() {
+    const { navigation } = this.props;
     const { email, password } = this.state;
     return (
       <View style={styles.container}>
@@ -94,9 +104,7 @@ class Login extends Component {
             onChangeText={(text) => this.setState({ password: text })}
           />
         </View>
-        <TouchableOpacity>
-          <Text style={styles.forgot}>Forgot Password?</Text>
-        </TouchableOpacity>
+
         <TouchableOpacity
           style={styles.loginBtn}
           onPress={() => {
@@ -106,14 +114,19 @@ class Login extends Component {
           <Text style={styles.loginText}>LOGIN</Text>
           {/*dava para usar Button, mas com o TouchableOpacity dá para deixar mais bonito*/}
         </TouchableOpacity>
+
         <TouchableOpacity
           onPress={() => {
-            alert("QUE PENA");
+            navigation.navigate("EsqueciSenha");
           }}
         >
           <Text style={styles.text}>Esqueceu a senha?</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate("PreCadastro");
+          }}
+        >
           <Text style={styles.text}>Cadastre-se</Text>
         </TouchableOpacity>
       </View>

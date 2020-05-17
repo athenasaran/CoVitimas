@@ -6,7 +6,7 @@ export default class App extends React.Component {
   render() {
     return (
       <>
-        <StatusBar barStyle="light-content" backgroundColor="#7d40e7" />
+        <StatusBar barStyle="light-content" backgroundColor="#00b33c" />
         <Routes />
       </>
     );

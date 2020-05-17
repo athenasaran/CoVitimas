@@ -9,14 +9,14 @@ const styles = StyleSheet.create({
   },
 });
 
-class EsqueciSenha extends Component {
+class Chat extends Component {
   render() {
   return (
     <View style={styles.container}>
-      <Text>EsqueciSenha</Text>
+      <Text>Chat</Text>
     </View>
   );
 }}
 
 
-export default EsqueciSenha;
+export default Chat;

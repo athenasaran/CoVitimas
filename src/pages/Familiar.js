@@ -18,8 +18,6 @@ class Familiar extends Component {
   );
 }}
 
-Familiar.navigationOptions = {
-  header: null,
-};
+
 
 export default Familiar;

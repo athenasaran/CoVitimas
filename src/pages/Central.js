@@ -18,8 +18,5 @@ class Central extends Component {
   );
 }}
 
-Central.navigationOptions = {
-  header: null,
-};
 
 export default Central;

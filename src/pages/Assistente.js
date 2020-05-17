@@ -18,8 +18,6 @@ class Assistente extends Component {
   );
 }}
 
-Assistente.navigationOptions = {
-  header: null,
-};
+
 
 export default Assistente;
