@@ -17,6 +17,7 @@ import Familia from "./pages/Familia";
 const Routes = createAppContainer(
   createStackNavigator(
     {
+      Login,
       Diario: {
         screen: Diario,
         navigationOptions: {
@@ -61,8 +62,6 @@ const Routes = createAppContainer(
           headerTitle: "Cadastro",
         },
       },
-
-      Login,
       Main,
       Assistente: {
         screen: Assistente,
@@ -86,7 +85,6 @@ const Routes = createAppContainer(
           headerTitle: "Pedido de Assistência",
         },
       },
-
       Chat: {
         screen: Chat,
         navigationOptions: {
@@ -109,8 +107,6 @@ const Routes = createAppContainer(
           headerTitle: "Esqueci Senha",
         },
       },
-      
-
       Central: {
         screen: Central,
         navigationOptions: {
@@ -159,7 +155,7 @@ const Routes = createAppContainer(
     },
     {
       defaultNavigationOptions: {
-        headerTitle: "COVID",
+        headerTitle: "CoVitimas",
         headerTintColor: "#FFF",
         headerTitleStyle: {
           fontWeight: "bold",

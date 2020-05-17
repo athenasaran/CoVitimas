@@ -53,7 +53,7 @@ class PedidoAssistencia extends Component {
               Carla, 25 anos. Belo Horizonte, MG
             </Text>
             <Text style={{ alignSelf: "center" }}>
-            COMIDA, ÁGUA E LUZ
+            PRODUTOS DE HIGIENE
             </Text>
           </View>
         </View>
@@ -93,7 +93,7 @@ class PedidoAssistencia extends Component {
               Marcos, 50 anos. Belo Horizonte, MG
             </Text>
             <Text style={{ alignSelf: "center" }}>
-            COMIDA, ÁGUA E LUZ
+            APOIO PARA SERVIÇOS EXTERNOS
             </Text>
           </View>
         </View>

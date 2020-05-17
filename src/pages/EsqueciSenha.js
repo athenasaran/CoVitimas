@@ -3,10 +3,14 @@ import {
   StyleSheet,
   Text,
   View,
+  Image,
   TextInput,
   TouchableOpacity,
 } from "react-native";
+import splash from '../img/logo.png'
+import {Dimensions} from 'react-native';
 
+let { height, width } = Dimensions.get('window');
 import PropTypes from "prop-types";
 
 const styles = StyleSheet.create({
@@ -60,6 +64,9 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     margin: 2,
   },
+  imagem:{
+    height:240, width: 0.9 * width
+  }
 });
 
 class EsqueciSenha extends Component {
@@ -86,8 +93,12 @@ class EsqueciSenha extends Component {
     const { email, password } = this.state;
     return (
       <View style={styles.container}>
-        <Text style={styles.logo}>COVID</Text>
-         
+        
+        <Image
+        style={styles.imagem}
+        source={splash}
+      
+      />
         <Text style={styles.inputText}>Digite o email cadastrado</Text>
 
         <View style={styles.inputView}>
