@@ -15,6 +15,18 @@ import PreCadastro from "./pages/PreCadastro";
 const Routes = createAppContainer(
   createStackNavigator(
     { 
+
+      EsqueciSenha: {
+        screen: EsqueciSenha,
+        navigationOptions: {
+          headerTitleStyle: {
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Esqueci Senha",
+        },
+      },
       Diario: {
         screen: Diario,
         navigationOptions: {
@@ -94,19 +106,6 @@ const Routes = createAppContainer(
             textAlign: "center",
           },
           headerTitle: "Assistentes Sociais",
-        },
-      },
-
-      
-      EsqueciSenha: {
-        screen: EsqueciSenha,
-        navigationOptions: {
-          headerTitleStyle: {
-            fontWeight: "bold",
-            alignSelf: "center",
-            textAlign: "center",
-          },
-          headerTitle: "Esqueci Senha",
         },
       },
       Familiar: {
