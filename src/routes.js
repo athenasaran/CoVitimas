@@ -17,6 +17,17 @@ import Familia from "./pages/Familia";
 const Routes = createAppContainer(
   createStackNavigator(
     {
+      Diario: {
+        screen: Diario,
+        navigationOptions: {
+          headerTitleStyle: {
+            fontWeight: "bold",
+            alignSelf: "center",
+            textAlign: "center",
+          },
+          headerTitle: "Diário",
+        },
+      },
       Perfil: {
         screen: Perfil,
         navigationOptions: {
@@ -98,17 +109,7 @@ const Routes = createAppContainer(
           headerTitle: "Esqueci Senha",
         },
       },
-      Diario: {
-        screen: Diario,
-        navigationOptions: {
-          headerTitleStyle: {
-            fontWeight: "bold",
-            alignSelf: "center",
-            textAlign: "center",
-          },
-          headerTitle: "Diário",
-        },
-      },
+      
 
       Central: {
         screen: Central,
