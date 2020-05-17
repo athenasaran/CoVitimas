@@ -7,19 +7,18 @@ const style = StyleSheet.create({
         color: '#000000',
         fontSize: 12,
         textAlign: 'center',
-        marginTop: 20,
-        fontWeight: 'bold'
+        marginTop: 20
     },
     container2: {
         width: '50%',
         aspectRatio: 1,
-        borderRadius: 30,
-        padding: 5
+        borderRadius: 10,
+        padding: 2
     },
     view1: {
         backgroundColor: '#FFF',
         width: '100%',
-        height: '35%',
+        height: '100%',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center'

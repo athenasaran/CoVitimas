@@ -6,16 +6,6 @@ import { Icon } from "react-native-elements";
 import PropTypes from 'prop-types'
 
 const style = StyleSheet.create({
-  button: {
-    backgroundColor: "#FFF",
-    width: "50%",
-  },
-  title: {
-    color: "#000000",
-    fontSize: 12,
-    textAlign: "center",
-    marginTop: 20,
-  },
   container: {
     flex: 1,
     height: "100%",
@@ -24,20 +14,6 @@ const style = StyleSheet.create({
     width: "100%",
     flexWrap: "wrap",
     backgroundColor: "#DDD",
-  },
-  container2: {
-    width: "50%",
-    aspectRatio: 1,
-    borderRadius: 10,
-    padding: 2,
-  },
-  view1: {
-    backgroundColor: "#FFF",
-    width: "100%",
-    height: "100%",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
   },
   icon: {
     alignItems: "center",
@@ -112,11 +88,11 @@ class Main extends Component {
                 size={60}
               />
             }
-            title="ASSISTENTES SOCIAIS"
+            title="PEDIR ASSISTÊNCIA"
           />
           <MenuItem
             onPress={() => {
-              navigation.navigate("Servicos");
+              navigation.navigate("Chat");
             }}
             image={
               <Icon

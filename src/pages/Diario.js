@@ -1,6 +1,6 @@
 import * as WebBrowser from "expo-web-browser";
 import React, { Component } from "react";
-import { TouchableOpacity, StyleSheet, Text, View } from "react-native";
+import { TouchableOpacity, StyleSheet, Text, View, TextInput} from "react-native";
 import Item from "../components/Item";
 import { Icon } from "react-native-elements";
 import PropTypes from "prop-types";
@@ -34,6 +34,22 @@ const style = StyleSheet.create({
     color: "white",
     fontWeight: "bold",
   },
+  inputText: {
+    height: 50,
+    color: "black",
+  },
+  inputView: {
+    width: "98%",
+    backgroundColor: "white",
+    borderColor: "black",
+    borderWidth: 1,
+    alignSelf:"center",
+    alignItems:"center",
+    marginLeft:"1%",
+    borderRadius: 25,
+    height: 100,
+    marginBottom: 15,
+  },
 });
 
 class Diario extends Component {
@@ -44,9 +60,11 @@ class Diario extends Component {
     const { navigation } = this.props;
     return (
       <>
-      <View style={style.container1}>
-        <Text style={style.title}>Quais os sintomas você está sentindo hoje?</Text>
-      </View>
+        <View style={style.container1}>
+          <Text style={style.title}>
+            Quais os sintomas você está sentindo hoje?
+          </Text>
+        </View>
         <View
           style={{
             flex: 1,
@@ -57,55 +75,33 @@ class Diario extends Component {
             backgroundColor: "#DDD",
           }}
         >
-          <Item
-            onPress={() => {
-              navigation.navigate("Diario");
-            }}
-            title="DIFICULDADE DE RESPIRAR"
-          />
+          <Item title="DIFICULDADE DE RESPIRAR" />
 
-          <Item
-            onPress={() => {
-              navigation.navigate("Orientacoes");
-            }}
-            title="DOR DE GARGANTA"
-          />
+          <Item title="DOR DE GARGANTA" />
 
-          <Item
-            onPress={() => {
-              navigation.navigate("Diario");
-            }}
-            title="FEBRE"
-          />
+          <Item title="FEBRE" />
 
-          <Item
-            onPress={() => {
-              navigation.navigate("Orientacoes");
-            }}
-            title="TOSSE"
-          />  
+          <Item title="TOSSE" />
 
-                    <Item
-            onPress={() => {
-              navigation.navigate("Orientacoes");
-            }}
-            title="PERDA DO OLFATO"
-          />  
-                    <Item
-            onPress={() => {
-              navigation.navigate("Orientacoes");
-            }}
-            title="NENHUM DESSES SINTOMAS"
+          <Item title="PERDA DO OLFATO" />
+          <Item title="NENHUM DESSES SINTOMAS" />
+          <Text style={{ padding: 10, fontWeight: "bold", fontSize: 15 }}>
+            {" "}
+            OUTRO:
+          </Text>
+          <View style={style.inputView}>
+          <TextInput
+            secureTextEntry
+            style={style.inputText}
+            placeholderTextColor="#003f5c"
+           
           />
-          <TouchableOpacity
-          style={style.loginBtn}
-        
-        >
-          <Text style={style.loginText}>CONFIRMAR</Text>
-          {/*dava para usar Button, mas com o TouchableOpacity dá para deixar mais bonito*/}
-        </TouchableOpacity>
+</View>
+          <TouchableOpacity style={style.loginBtn}>
+            <Text style={style.loginText}>CONFIRMAR</Text>
+            {/*dava para usar Button, mas com o TouchableOpacity dá para deixar mais bonito*/}
+          </TouchableOpacity>
         </View>
-    
       </>
     );
   }
